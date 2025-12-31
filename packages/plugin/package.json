@@ -1,0 +1,14 @@
+{
+  "name": "@hkx/plugin",
+  "version": "0.0.1",
+  "description": "Plugin utilities for hkx",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p ../../tsconfig.json"
+  },
+  "license": "MIT"
+}

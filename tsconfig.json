@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "@@/*": [".dumi/tmp/*"],
+      "@hkx/design": ["packages/design/src"],
+      "@hkx/design/*": ["packages/design/src/*"],
+      "@hkx/design-mobile": ["packages/designMobile/src"],
+      "@hkx/design-mobile/*": ["packages/designMobile/src/*"],
+      "@hkx/plugin": ["packages/plugin/src"],
+      "@hkx/plugin/*": ["packages/plugin/src/*"],
+      "@hkx/util": ["packages/util/src"],
+      "@hkx/util/*": ["packages/util/src/*"],
+      "@hkx/hook": ["packages/hook/src"],
+      "@hkx/hook/*": ["packages/hook/src/*"],
+      "@hkx/ai": ["packages/ai/src"],
+      "@hkx/ai/*": ["packages/ai/src/*"]
+    }
+  },
+  "include": [
+    ".dumirc.ts",
+    "packages/*/src/**/*",
+    "packages/*/index.*",
+    "docs/**/*"
+  ]
+}
