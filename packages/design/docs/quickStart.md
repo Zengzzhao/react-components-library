@@ -2,7 +2,7 @@
 title: 快速上手
 order: 2
 group:
-  title: 文档
+  title: design组件库
   order: 1
 ---
 

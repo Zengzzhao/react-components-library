@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 import { resolve } from 'path';
 
+// 尝试获取当前根目录下的 antd 路径，之后通过别名使用antd时引入的都是这个路径的antd，确保版本一致
 let antdPath = '';
 try {
   antdPath = require.resolve('antd', { paths: [__dirname] });
@@ -13,9 +14,9 @@ export default defineConfig({
   outputPath: 'dist',
   // 配置路由的解析目录（解析左侧二级菜单）
   resolve: {
-    // 配置 Markdown 文档的解析目录，路径下的 Markdown 文档会根据目录结构解析为路由。
+    // 配置站点级文档，路径下的 Markdown 文档会根据目录结构解析为路由。
     docDirs: ['docs'],
-    // 配置原子资产（例如组件、函数、工具等）Markdown 的解析目录。
+    // 配置原子资产（例如组件、函数、工具等）级 Markdown 的解析目录。
     atomDirs: [
       // 映射 /designs 路由
       { type: 'design', dir: 'packages/design/docs' },
@@ -37,7 +38,7 @@ export default defineConfig({
       { type: 'ai', dir: 'packages/ai/src' },
     ],
   },
-  // 配置别名
+  // 配置别名，方便在文档中引用本地的各个包
   alias: {
     '@hkx/plugin': resolve(__dirname, 'packages/plugin'),
     '@hkx/design': resolve(__dirname, 'packages/design'),

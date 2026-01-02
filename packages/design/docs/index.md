@@ -2,7 +2,7 @@
 title: 介绍
 order: 1
 group:
-  title: 文档
+  title: design组件库
   order: 1
 ---
 

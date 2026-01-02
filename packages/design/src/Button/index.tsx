@@ -2,7 +2,7 @@ import React from 'react';
 import './index.less';
 
 export interface ButtonProps {
-  type: 'primary' | 'dashed' | 'text' | 'link';
+  type?: 'primary' | 'dashed' | 'text' | 'link';
   disabled?: boolean;
   size?: 'small' | 'middle' | 'large';
   children?: React.ReactNode;

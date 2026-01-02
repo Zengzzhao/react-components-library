@@ -2,7 +2,7 @@
 title: Button 按钮
 order: 1
 group:
-  title: 通用
+  title: 组件
   order: 2
 ---
 
