@@ -1,6 +1,6 @@
 {
-  "name": "@zengzizhao/design",
-  "version": "0.0.1",
+  "name": "@asuperlib/design",
+  "version": "0.0.0",
   "description": "HKX Design Component Library",
   "license": "MIT",
   "exports": {

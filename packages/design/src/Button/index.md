@@ -14,11 +14,11 @@ group:
 
 ### 类型
 
-<code src="./demo/typeDemo.jsx"></code>
+<code src="./demo/typeDemo.tsx"></code>
 
 ### 禁用状态
 
-<code src="./demo/disabledDemo.jsx"></code>
+<code src="./demo/disabledDemo.tsx"></code>
 
 
 ## API
