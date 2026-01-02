@@ -2,7 +2,7 @@
 title: Throttle 节流
 order: 3
 group:
-  title: 通用
+  title: 工具库
   order: 2
 ---
 

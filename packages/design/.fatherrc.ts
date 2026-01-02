@@ -1,12 +1,11 @@
 import { defineConfig } from 'father';
 
 export default defineConfig({
+  extends:"../../.fatherrc.ts",
   esm: {
-    output: 'dist/esm',
     ignores: ['**/demo/**'],
   },
   cjs: {
-    output: 'dist/cjs',
     ignores: ['**/demo/**'],
   },
 });

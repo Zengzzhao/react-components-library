@@ -1,13 +1,17 @@
 {
-  "name": "@hkx/util",
-  "version": "0.0.1",
+  "name": "@asuperlib/util",
+  "version": "0.0.0",
   "description": "Utility helpers for hkx (date, math)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc -p ../../tsconfig.json"
+    "build": "father build"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "father": "^4.6.13"
+  }
 }
-
