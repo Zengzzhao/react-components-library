@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.less';
+import './index.css';
 
 export interface ButtonProps {
   type?: 'primary' | 'dashed' | 'text' | 'link';

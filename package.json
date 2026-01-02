@@ -17,7 +17,9 @@
     "lint:css": "stylelint \"packages/**/*.{css,less}\"",
     "lint:es": "eslint \"packages/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "release": "node scripts/publish-packages.mjs"
+    "release": "node scripts/publish-packages.mjs",
+    "build:design":"pnpm --filter @asuperlib/design build",
+    "publish:design": "pnpm --filter @asuperlib/design publish"
   },
   "commitlint": {
     "extends": [
