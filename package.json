@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {
     "build": "pnpm -r --filter @hkx/* run build",
+    "build:design": "pnpm --filter @asuperlib/design build",
+    "build:uitl": "pnpm --filter @asuperlib/uitl build",
     "build:watch": "pnpm -r --filter @hkx/* run build:watch",
     "build:workspace": "pnpm -r build",
     "clean": "pnpm -r exec node -e \"const fs=require('fs');try{fs.rmSync('dist',{recursive:true,force:true});}catch(e){if(e.code!=='ENOENT')throw e;}\"",
@@ -17,9 +19,9 @@
     "lint:css": "stylelint \"packages/**/*.{css,less}\"",
     "lint:es": "eslint \"packages/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install && dumi setup",
-    "release": "node scripts/publish-packages.mjs",
-    "build:design":"pnpm --filter @asuperlib/design build",
-    "publish:design": "pnpm --filter @asuperlib/design publish"
+    "publish:design": "pnpm --filter @asuperlib/design publish",
+    "publish:uitl": "pnpm --filter @asuperlib/uitl publish",
+    "release": "node scripts/publish-packages.mjs"
   },
   "commitlint": {
     "extends": [
